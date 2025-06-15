@@ -1,10 +1,15 @@
 import { motion } from 'framer-motion';
+import socialNetworkImg from '../assets/images/projects/social-network.jpg';
+import missingThingsImg from '../assets/images/projects/missing-things.jpg';
+import searchEngineImg from '../assets/images/projects/search-engine.jpg';
+import osSchedulerImg from '../assets/images/projects/os-scheduler.jpg';
+import resumeBuilderImg from '../assets/images/projects/resume-builder.jpg';
 
 const projects = [
   {
     title: "Social Network Backend",
     description: "Designed and implemented a software product mimicking functionalities of Telegram, utilizing state-of-the-art tools and technologies. Created Whisper, a Telegram clone, to facilitate seamless communication with features like real-time messaging, group chats, and channels.",
-    image: "/images/projects/social-network.jpg",
+    image: socialNetworkImg,
     technologies: ["Node.js", "Express", "MongoDB", "WebSocket"],
     github: "https://github.com/GramBelleg/Whisper_BackEnd",
     live: "#"
@@ -12,7 +17,7 @@ const projects = [
   {
     title: "Missing Things",
     description: "Designed a web-based platform to connect individuals who have lost items with those who have found them. Aimed to streamline the process of reuniting lost belongings with their owners through online connectivity.",
-    image: "/images/projects/missing-things.jpg",
+    image: missingThingsImg,
     technologies: ["React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/OmarMoh44/missing-things",
     live: "#"
@@ -20,7 +25,7 @@ const projects = [
   {
     title: "Search Engine Bolt",
     description: "Created a Crawler-based search engine to demonstrate the 3 core functions of a search engine: indexing, ranking, and web crawling. Enabled users to interact with the search engine, providing a Google-like experience.",
-    image: "/images/projects/search-engine.jpg",
+    image: searchEngineImg,
     technologies: ["Python", "Web Crawling", "Search Algorithms"],
     github: "https://github.com/3mr-mahmoud/search-engine",
     live: "#"
@@ -28,7 +33,7 @@ const projects = [
   {
     title: "OS Scheduler",
     description: "Created a CPU scheduler simulator to demonstrate how a CPU scheduler selects and executes processes in a specific sequence. Utilized scheduling algorithms such as Round Robin, Higher Priority First, and Shortest Remaining Time.",
-    image: "/images/projects/os-scheduler.jpg",
+    image: osSchedulerImg,
     technologies: ["C++", "Operating Systems", "Algorithms"],
     github: "https://github.com/OmarMoh44/OS",
     live: "#"
@@ -36,7 +41,7 @@ const projects = [
   {
     title: "Resume Builder",
     description: "Aimed to help users create impressive resumes that highlight their unique accomplishments, experiences, and skills. Provided professional advice and easy-to-use templates to simplify the resume-writing process for job seekers.",
-    image: "/images/projects/resume-builder.jpg",
+    image: resumeBuilderImg,
     technologies: ["React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/Mo-Khater/ResemeGenerator",
     live: "#"
