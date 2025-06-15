@@ -1,12 +1,5 @@
 import { motion } from 'framer-motion';
 
-const stats = [
-  { number: "250", label: "Projects Completed" },
-  { number: "15", label: "Years Experience" },
-  { number: "50", label: "Team Members" },
-  { number: "100", label: "Happy Clients" }
-];
-
 const About = () => {
   return (
     <section id="about" className="py-20 bg-dark text-white">
