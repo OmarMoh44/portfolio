@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -14,35 +14,39 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-4">
             <span className="text-secondary font-mono">01.</span> About Me
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
               <p className="text-gray-400 mb-4">
-                I am a Computer Engineering student at Cairo University, passionate about building secure and efficient web applications. 
-                My journey in software development began with a focus on backend technologies, particularly Node.js and SQL databases.
+                I am a Computer Engineering student at Cairo University,
+                passionate about building secure and efficient web applications.
+                Through intensive training programs at Cairo University's
+                Computer Engineering Department, I have honed my skills in
+                modern web technologies, collaborative development practices,
+                machine learning algorithms, and deep learning frameworks. My
+                journey in software development began with a focus on backend
+                technologies, particularly Node.js and SQL databases, and has
+                expanded to include expertise in data preprocessing and
+                full-stack development.
               </p>
               <p className="text-gray-400 mb-4">
-                During my studies, I've completed coursework in Object-Oriented Programming, Data Structures, Algorithms Analysis, 
-                Database Management, Web Development, and Software Engineering. This academic foundation has been complemented by 
-                practical experience in full-stack development.
+                During my studies, I've completed coursework in Object Oriented
+                Programming, Data Structures, Algorithms Analysis,
+                Database Management, Web Development, Computer Architecture,
+                Software Engineering, Operating System, Neural Network, Image
+                Processing.
               </p>
               <p className="text-gray-400 mb-6">
-                I recently completed an intensive full-stack development training at Cairo University's Computer Engineering Department, 
-                where I enhanced my skills in modern web technologies and collaborative development practices.
+                I completed an intensive full-stack development training at
+                Cairo University's Computer Engineering Department, where I
+                enhanced my skills in modern web technologies and collaborative
+                development practices.
               </p>
-              <div className="grid grid-cols-2 gap-4">
-                <ul className="list-disc list-inside text-gray-400">
-                  <li>Node.js</li>
-                  <li>Express.js</li>
-                  <li>MongoDB</li>
-                  <li>PostgreSQL</li>
-                </ul>
-                <ul className="list-disc list-inside text-gray-400">
-                  <li>React.js</li>
-                  <li>TypeScript</li>
-                  <li>Git</li>
-                  <li>Linux</li>
-                </ul>
-              </div>
+              <p className="text-gray-400 mb-6">
+                I completed an intensive ML/DL training at Cairo University's
+                Computer Engineering Department, where I enhanced my skills in
+                machine learning algorithms, deep learning frameworks, and data
+                preprocessing techniques.
+              </p>
             </div>
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
@@ -53,7 +57,7 @@ const About = () => {
             >
               <div className="relative w-full h-[400px] rounded-lg overflow-hidden border-2 border-secondary">
                 <img
-                  src="public\images\profile.jpg"
+                  src="/portfolio/images/profile.jpg"
                   alt="Omar Mohammed"
                   className="w-full h-full object-cover"
                 />
@@ -66,4 +70,4 @@ const About = () => {
   );
 };
 
-export default About; 
+export default About;

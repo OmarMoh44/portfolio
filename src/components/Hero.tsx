@@ -34,8 +34,7 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="text-lg text-gray-400 max-w-2xl mx-auto mb-12"
         >
-          A dedicated Software Engineer with a focus on backend development, proficient in Node.Js and SQL. 
-          Experienced in building secure, database-driven applications, and recognized for strong problem-solving skills.
+          A dedicated Software Engineer.
         </motion.p>
         <motion.a
           href="#projects"

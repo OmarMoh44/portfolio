@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion';
-import { 
-  CodeBracketIcon, 
-  GlobeAltIcon, 
-  CircleStackIcon, 
+import { motion } from "framer-motion";
+import {
+  CodeBracketIcon,
+  GlobeAltIcon,
+  CircleStackIcon,
   WrenchScrewdriverIcon,
-  UserGroupIcon
-} from '@heroicons/react/24/outline';
+  UserGroupIcon,
+} from "@heroicons/react/24/outline";
 
 interface SkillItem {
   name: string;
@@ -23,49 +23,129 @@ const skills: SkillCategory[] = [
     category: "Programming Languages",
     icon: CodeBracketIcon,
     items: [
-      { name: "C/C++", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
-      { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-      { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" }
-    ]
+      {
+        name: "JavaScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },
+      {
+        name: "TypeScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "Python",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      },
+      {
+        name: "Java",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+      },
+      {
+        name: "C/C++",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+      },
+    ],  
   },
   {
-    category: "Web Development",
+    category: "Backend Development",
     icon: GlobeAltIcon,
     items: [
-      { name: "HTML/CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-      { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-      { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-      { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-      { name: "Express.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" }
-    ]
+      {
+        name: "Node.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      },
+      {
+        name: "Express.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      },
+      { name: "RESTful APIs" },
+      {
+        name: "GraphQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+      },
+      {
+        name: "Socket.IO",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
+      },
+    ],
+  },
+  {
+    category: "Frontend Development",
+    icon: GlobeAltIcon,
+    items: [
+      {
+        name: "React",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      {
+        name: "HTML/CSS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      },
+    ],
   },
   {
     category: "Databases",
     icon: CircleStackIcon,
     items: [
-      { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-      { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" }
-    ]
+      {
+        name: "PostgreSQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+      },
+      {
+        name: "MongoDB",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      },
+      {
+        name: "Redis",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+      },
+      { name: "Prisma ORM" },
+    ],
   },
   {
-    category: "Tools",
+    category: "Tools & Technologies",
     icon: WrenchScrewdriverIcon,
     items: [
-      { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-      { name: "Linux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" }
-    ]
+      {
+        name: "Git",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      },
+      {
+        name: "Docker",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+      },
+      {
+        name: "Linux",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+      },
+    ],
+  },
+  {
+    category: "Machine Learning",
+    icon: CodeBracketIcon,
+    items: [
+      {
+        name: "TensorFlow",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+      },
+      { name: "scikit-learn" },
+      {
+        name: "NumPy",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
+      },
+      { name: "Pandas" },
+    ],
   },
   {
     category: "Soft Skills",
     icon: UserGroupIcon,
     items: [
-      { name: "Problem Solving" },
-      { name: "Teamwork" },
       { name: "Communication" },
+      { name: "Teamwork" },
+      { name: "Problem Solving" },
       { name: "Time Management" },
-      { name: "Troubleshooting" }
-    ]
-  }
+      { name: "Troubleshooting" },
+    ],
+  },
 ];
 
 export default function Skills() {
@@ -81,7 +161,8 @@ export default function Skills() {
         >
           <h2 className="text-4xl font-bold mb-4">Skills & Expertise</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            A comprehensive overview of my technical capabilities and professional competencies
+            A comprehensive overview of my technical capabilities and
+            professional competencies
           </p>
         </motion.div>
 
@@ -122,4 +203,4 @@ export default function Skills() {
       </div>
     </section>
   );
-} 
+}
