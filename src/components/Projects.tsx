@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
+/**
+ * Notes in updating portfolio:
+ * 1- remove gh-pages branch to delete last build
+ * 2- before git run build, we need to copy the project folder to C:\omar directory as long path name causes error
+ */
+
 const getImagePath = (path: string) => {
   return `/portfolio/images/projects${path}`;
 };
@@ -16,10 +22,10 @@ interface Project {
 
 const softwareProjects: Project[] = [
   {
-    title: "Social Network Backend",
+    title: "Whisper Backend (Messaging Backend)",
     description:
       "Designed and implemented a software product mimicking functionalities of Telegram, utilizing state-of-the-art tools and technologies. Created Whisper, a Telegram clone, to facilitate seamless communication with features like real-time messaging, group chats, and channels.",
-    image: getImagePath("/social-network.jpg"),
+    image: getImagePath("/whisper-backend.jpg"),
     technologies: [
       "Node.js",
       "Express.js",
@@ -48,6 +54,38 @@ const softwareProjects: Project[] = [
       "JWT",
     ],
     github: "https://github.com/OmarMoh44/E-commerce",
+    live: "#",
+  },
+  {
+    title: "Care Track (Healthcare Management System)",
+    description:
+      "Developed Care Track, a healthcare management system with a Spring Boot backend and a Flutter mobile application.Implemented features for appointment booking, medical record management, doctor and patient authentication, and user profile management.",
+    image: getImagePath("/care-track.png"),
+    technologies: [
+      "Flutter",
+      "Spring Boot",
+      "Spring Data JPA / Hibernate (ORM)",
+      "PostgreSQL",
+      "Spring Security (JWT)",
+      "REST APIs",
+    ],
+    github: "https://github.com/OmarMoh44/CareTrack",
+    live: "#",
+  },
+  {
+    title: "E-commerce (Backend API)",
+    description:
+      "Developed a backend for an E-commerce application using Java and Spring Boot. Designed and implemented data models for users, products, categories, carts, and cart items.",
+    image: getImagePath("/e-commerce-backend.jpg"),
+    technologies: [
+      "Spring Boot",
+      "Spring Data JPA / Hibernate (ORM)",
+      "PostgreSQL",
+      "Spring Security (JWT)",
+      "Redis",
+      "REST APIs",
+    ],
+    github: "https://github.com/OmarMoh44/E-commerce_demo",
     live: "#",
   },
   {
@@ -104,36 +142,63 @@ const softwareProjects: Project[] = [
 const aiProjects: Project[] = [
   {
     title: "Voice-based Age & Gender Classification System",
-    description: 
+    description:
       "Developed a system that processes audio recordings to classify speakers into four demographic categories (male/female, young/old). Designed and implemented a complete machine learning pipeline, including audio preprocessing, feature extraction (MFCCs, formants, pitch, spectral features), feature selection, and model training using techniques like SMOTE and cross-validation.",
     image: getImagePath("/voice-based-age-gender-classification.png"),
-    technologies: ["Python", "scikit-learn", "Pandas", "NumPy", "Matplotlib", "Librosa", "Praat-Parselmouth", "Soundfile"],
-    github: "https://github.com/OmarMoh44/Voice_Age-Gender_Classification_System",
+    technologies: [
+      "Python",
+      "scikit-learn",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Librosa",
+      "Praat-Parselmouth",
+      "Soundfile",
+    ],
+    github:
+      "https://github.com/OmarMoh44/Voice_Age-Gender_Classification_System",
     live: "#",
   },
   {
     title: "Disease Detection System",
-    description: 
+    description:
       "Created a machine learning-based disease detection system that compares multiple classification models for accurate predictions. The project includes a machine learning pipeline and a web-based interface for real-time predictions.",
     image: getImagePath("/disease-detection.png"),
-    technologies: ["Python", "Pandas", "NumPy", "scikit-learn", "Keras", "TensorFlow"],
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "scikit-learn",
+      "Keras",
+      "TensorFlow",
+    ],
     github: "https://github.com/OmarMoh44/disease_detection",
     live: "#",
   },
   {
     title: "Grades Auto-Filler System",
-    description: 
+    description:
       "Built a system to automatically process bubble sheets and grade sheets, integrating machine learning-based recognition of handwritten digits and symbols with Optical Character Recognition (OCR) for text processing.",
     image: getImagePath("/grades-auto-filler.png"),
-    technologies: ["Python", "Pandas", "NumPy", "scikit-learn", "OpenCV", "Matplotlib"],
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "scikit-learn",
+      "OpenCV",
+      "Matplotlib",
+    ],
     github: "https://github.com/3mr-mahmoud/grades-auto-filler",
     live: "#",
-  }
+  },
 ];
 
 const Projects = () => {
-  const [activeCategory, setActiveCategory] = useState<'software' | 'ai'>('software');
-  const projects = activeCategory === 'software' ? softwareProjects : aiProjects;
+  const [activeCategory, setActiveCategory] = useState<"software" | "ai">(
+    "software"
+  );
+  const projects =
+    activeCategory === "software" ? softwareProjects : aiProjects;
 
   return (
     <section id="projects" className="py-20 bg-dark text-white">
@@ -151,21 +216,21 @@ const Projects = () => {
 
         <div className="flex justify-center gap-4 mb-12">
           <button
-            onClick={() => setActiveCategory('software')}
+            onClick={() => setActiveCategory("software")}
             className={`px-6 py-2 rounded-full ${
-              activeCategory === 'software'
-                ? 'bg-secondary text-white'
-                : 'bg-gray-800 text-gray-400 hover:text-secondary'
+              activeCategory === "software"
+                ? "bg-secondary text-white"
+                : "bg-gray-800 text-gray-400 hover:text-secondary"
             }`}
           >
             Software Engineering
           </button>
           <button
-            onClick={() => setActiveCategory('ai')}
+            onClick={() => setActiveCategory("ai")}
             className={`px-6 py-2 rounded-full ${
-              activeCategory === 'ai'
-                ? 'bg-secondary text-white'
-                : 'bg-gray-800 text-gray-400 hover:text-secondary'
+              activeCategory === "ai"
+                ? "bg-secondary text-white"
+                : "bg-gray-800 text-gray-400 hover:text-secondary"
             }`}
           >
             Artificial Intelligence

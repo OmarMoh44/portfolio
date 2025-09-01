@@ -43,7 +43,7 @@ const skills: SkillCategory[] = [
         name: "C/C++",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
       },
-    ],  
+    ],
   },
   {
     category: "Backend Development",
@@ -56,6 +56,10 @@ const skills: SkillCategory[] = [
       {
         name: "Express.js",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      },
+      {
+        name: "Spring Boot",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
       },
       { name: "RESTful APIs" },
       {
@@ -99,6 +103,10 @@ const skills: SkillCategory[] = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
       },
       { name: "Prisma ORM" },
+            {
+        name: "Spring Data JPA / Hibernate (ORM)",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg",
+      },
     ],
   },
   {
