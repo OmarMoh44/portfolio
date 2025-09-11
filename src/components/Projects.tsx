@@ -20,7 +20,120 @@ interface Project {
   live: string;
 }
 
-const softwareProjects: Project[] = [
+const aiProjects: Project[] = [
+  {
+    title: "Voice-based Age & Gender Classification System",
+    description:
+      "Developed a system that processes audio recordings to classify speakers into four demographic categories (male/female, young/old). Designed and implemented a complete machine learning pipeline, including audio preprocessing, feature extraction (MFCCs, formants, pitch, spectral features), feature selection, and model training using techniques like SMOTE and cross-validation.",
+    image: getImagePath("/voice-based-age-gender-classification.png"),
+    technologies: [
+      "Python",
+      "scikit-learn",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Librosa",
+      "Praat-Parselmouth",
+      "Soundfile",
+    ],
+    github:
+      "https://github.com/OmarMoh44/Voice_Age-Gender_Classification_System",
+    live: "#",
+  },
+  {
+    title: "Disease Detection System",
+    description:
+      "Created a machine learning-based disease detection system that compares multiple classification models for accurate predictions. The project includes a machine learning pipeline and a web-based interface for real-time predictions.",
+    image: getImagePath("/disease-detection.png"),
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "scikit-learn",
+      "Keras",
+      "TensorFlow",
+    ],
+    github: "https://github.com/OmarMoh44/disease_detection",
+    live: "#",
+  },
+  {
+    title: "Grades Auto-Filler System",
+    description:
+      "Built a system to automatically process bubble sheets and grade sheets, integrating machine learning-based recognition of handwritten digits and symbols with Optical Character Recognition (OCR) for text processing.",
+    image: getImagePath("/grades-auto-filler.png"),
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "scikit-learn",
+      "OpenCV",
+      "Matplotlib",
+    ],
+    github: "https://github.com/3mr-mahmoud/grades-auto-filler",
+    live: "#",
+  },
+];
+
+const cppProjects: Project[] = [
+  {
+    title: "Process Scheduler",
+    description:
+      "Developed C++ multiprocessor scheduling simulator implementing FCFS, SJF, and Round Robin algorithms with work stealing load balancing (40% threshold). Built intelligent process migration system using RTF/MaxW metrics and SIGKILL signal processing for dynamic system control.",
+    image: "https://tse4.mm.bing.net/th/id/OIP.NhCZDcOyTfV7zPQ4Uc5HKgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+    technologies: ["C++", "Data Structures", "OOP", "Algorithm Design", "System Simulation"],
+    github: "https://github.com/omarmuhamed123/process_scheduler",
+    live: "#",
+  },
+  {
+    title: "Turbo Rush",
+    description: "Developed a high-performance 3D racing game with advanced graphics rendering and real-time collision detection. Implemented Entity-Component-System (ECS) architecture for modular game object management.",
+    image: "https://tse1.mm.bing.net/th/id/OIP.mp3wP0qo9IMlSj3MNKJ_hwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
+    technologies: ["C++", "OpenGL 4.0+", "GLSL", "CMake"],
+    github: "https://github.com/3mr-mahmoud/turbo-rush-game",
+    live: "#",
+  },
+  {
+    title: "Paints for kids",
+    description: "Developed a C++ educational application combining drawing tools with interactive learning games. Implemented comprehensive shape management system with 5+ geometric figures and color manipulation.",
+    image: "https://tse2.mm.bing.net/th/id/OIP.aQcZKuPcbYsStMJX7csLTgHaCO?rs=1&pid=ImgDetMain&o=7&rm=3",
+    technologies: ["C++", "CMU Graphics Library", "OOP", "Event-Driven Programming"],
+    github: "https://github.com/omarmuhamed123/paints_for_kids",
+    live: "#",
+  },
+  {
+    title: "OS Scheduler",
+    description: "Implemented CPU scheduling algorithms (HPF, SRTN, Round Robin) with real-time process simulation using C and Unix system calls. Developed memory management system using Buddy Algorithm with binary tree structure for efficient allocation/deallocation.",
+    image: "https://t3.ftcdn.net/jpg/05/60/65/08/360_F_560650876_vLGBE3kYdYrcBSn4J9XuVpGuovezEsJB.jpg",
+    technologies: ["Linux", "C", "Inter-Process Communication (IPC)", "Data Structures", "Algorithms"],
+    github: "https://github.com/OmarMoh44/OS",
+    live: "#",
+  }
+];
+
+const assemblyProjects: Project[] = [
+  {
+    title: "Car Racing Game",
+    description: "Developed a real-time multiplayer racing game with LAN connectivity for competitive gameplay. Implemented dynamic track generation with random racing circuits and power-up systems. Built integrated chat system with live messaging during gameplay and invitation features.",
+    image: getImagePath("/Car Racing Game.png"),
+    technologies: ["Assembly Language", "Serial Communication", "DOS/DOSBox"],
+    github: "https://github.com/KareemAshrafSaeed/Car-Racing-Game",
+    live: "#",
+  }
+];
+
+const hardwareProjects: Project[] = [
+  {
+    title: "Encryption Decryption",
+    description:
+      "Implemented a hardware-based encryption and decryption system using Verilog HDL on an FPGA board. The system utilizes the AES (Advanced Encryption Standard) algorithm to securely encrypt and decrypt data, ensuring confidentiality and integrity during transmission.",
+    image: "https://tse4.mm.bing.net/th/id/OIP.nISBqOryF6CiU9o6jHIxUQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
+    technologies: ["Verilog HDL", "FPGA Development", "Cryptography", "Hardware Simulation"],
+    github: "https://github.com/omarmuhamed123/encryption_decryption",
+    live: "#",
+  }
+];
+
+const webProjects: Project[] = [
   {
     title: "Whisper Backend (Messaging Backend)",
     description:
@@ -127,78 +240,32 @@ const softwareProjects: Project[] = [
     ],
     github: "https://github.com/Mo-Khater/ResemeGenerator",
     live: "#",
-  },
-  {
-    title: "OS Scheduler",
-    description:
-      "Created a CPU scheduler simulator to demonstrate how a CPU scheduler selects and executes processes in a specific sequence. Utilized scheduling algorithms such as Round Robin, Higher Priority First, and Shortest Remaining Time.",
-    image: getImagePath("/os-scheduler.jpg"),
-    technologies: ["C", "Linux", "Algorithms"],
-    github: "https://github.com/OmarMoh44/OS",
-    live: "#",
-  },
+  }
 ];
 
-const aiProjects: Project[] = [
-  {
-    title: "Voice-based Age & Gender Classification System",
-    description:
-      "Developed a system that processes audio recordings to classify speakers into four demographic categories (male/female, young/old). Designed and implemented a complete machine learning pipeline, including audio preprocessing, feature extraction (MFCCs, formants, pitch, spectral features), feature selection, and model training using techniques like SMOTE and cross-validation.",
-    image: getImagePath("/voice-based-age-gender-classification.png"),
-    technologies: [
-      "Python",
-      "scikit-learn",
-      "Pandas",
-      "NumPy",
-      "Matplotlib",
-      "Librosa",
-      "Praat-Parselmouth",
-      "Soundfile",
-    ],
-    github:
-      "https://github.com/OmarMoh44/Voice_Age-Gender_Classification_System",
-    live: "#",
-  },
-  {
-    title: "Disease Detection System",
-    description:
-      "Created a machine learning-based disease detection system that compares multiple classification models for accurate predictions. The project includes a machine learning pipeline and a web-based interface for real-time predictions.",
-    image: getImagePath("/disease-detection.png"),
-    technologies: [
-      "Python",
-      "Pandas",
-      "NumPy",
-      "scikit-learn",
-      "Keras",
-      "TensorFlow",
-    ],
-    github: "https://github.com/OmarMoh44/disease_detection",
-    live: "#",
-  },
-  {
-    title: "Grades Auto-Filler System",
-    description:
-      "Built a system to automatically process bubble sheets and grade sheets, integrating machine learning-based recognition of handwritten digits and symbols with Optical Character Recognition (OCR) for text processing.",
-    image: getImagePath("/grades-auto-filler.png"),
-    technologies: [
-      "Python",
-      "Pandas",
-      "NumPy",
-      "scikit-learn",
-      "OpenCV",
-      "Matplotlib",
-    ],
-    github: "https://github.com/3mr-mahmoud/grades-auto-filler",
-    live: "#",
-  },
-];
 
 const Projects = () => {
-  const [activeCategory, setActiveCategory] = useState<"software" | "ai">(
-    "software"
+  const [activeCategory, setActiveCategory] = useState<"web" | "ai" | "c/c++" | "assembly" | "hardware">(
+    "web"
   );
-  const projects =
-    activeCategory === "software" ? softwareProjects : aiProjects;
+  let projects = [];
+  switch (activeCategory) {
+    case "web":
+      projects = webProjects;
+      break;
+    case "ai":
+      projects = aiProjects;
+      break;
+    case "c/c++":
+      projects = cppProjects;
+      break;
+    case "assembly":
+      projects = assemblyProjects;
+      break;
+    case "hardware":
+      projects = hardwareProjects;
+      break;
+  }
 
   return (
     <section id="projects" className="py-20 bg-dark text-white">
@@ -216,14 +283,14 @@ const Projects = () => {
 
         <div className="flex justify-center gap-4 mb-12">
           <button
-            onClick={() => setActiveCategory("software")}
+            onClick={() => setActiveCategory("web")}
             className={`px-6 py-2 rounded-full ${
-              activeCategory === "software"
+              activeCategory === "web"
                 ? "bg-secondary text-white"
                 : "bg-gray-800 text-gray-400 hover:text-secondary"
             }`}
           >
-            Software Engineering
+            Web Development
           </button>
           <button
             onClick={() => setActiveCategory("ai")}
@@ -234,6 +301,36 @@ const Projects = () => {
             }`}
           >
             Artificial Intelligence
+          </button>
+          <button
+            onClick={() => setActiveCategory("hardware")}
+            className={`px-6 py-2 rounded-full ${
+              activeCategory === "hardware"
+                ? "bg-secondary text-white"
+                : "bg-gray-800 text-gray-400 hover:text-secondary"
+            }`}
+          >
+            Hardware Projects
+          </button>
+          <button
+            onClick={() => setActiveCategory("c/c++")}
+            className={`px-6 py-2 rounded-full ${
+              activeCategory === "c/c++"
+                ? "bg-secondary text-white"
+                : "bg-gray-800 text-gray-400 hover:text-secondary"
+            }`}
+          >
+            C/C++ Projects
+          </button>
+          <button
+            onClick={() => setActiveCategory("assembly")}
+            className={`px-6 py-2 rounded-full ${
+              activeCategory === "assembly"
+                ? "bg-secondary text-white"
+                : "bg-gray-800 text-gray-400 hover:text-secondary"
+            }`}
+          >
+            Assembly Projects
           </button>
         </div>
 

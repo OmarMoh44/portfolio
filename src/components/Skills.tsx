@@ -20,6 +20,21 @@ interface SkillCategory {
 
 const skills: SkillCategory[] = [
   {
+    category: "Core Concepts",
+    icon: GlobeAltIcon,
+    items: [
+      {
+        name: "Data Structures",
+      },
+      {
+        name: "Algorithms",
+      },
+      {
+        name: "Object-Oriented Programming (OOP)",
+      },
+    ],
+  },
+  {
     category: "Programming Languages",
     icon: CodeBracketIcon,
     items: [
@@ -42,6 +57,16 @@ const skills: SkillCategory[] = [
       {
         name: "C/C++",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+      },
+      {
+        name: "Assembly",
+      },
+      {
+        name: "Verilog",
+      },
+      {
+        name: "GLSL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opengl/opengl-original.svg",
       },
     ],
   },
@@ -103,27 +128,9 @@ const skills: SkillCategory[] = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
       },
       { name: "Prisma ORM" },
-            {
+      {
         name: "Spring Data JPA / Hibernate (ORM)",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg",
-      },
-    ],
-  },
-  {
-    category: "Tools & Technologies",
-    icon: WrenchScrewdriverIcon,
-    items: [
-      {
-        name: "Git",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-      },
-      {
-        name: "Docker",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-      },
-      {
-        name: "Linux",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
       },
     ],
   },
@@ -141,6 +148,32 @@ const skills: SkillCategory[] = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
       },
       { name: "Pandas" },
+    ],
+  },
+  {
+    category: "Hardware & Low-Level",
+    icon: CodeBracketIcon,
+    items: [
+      { name: "Hardware Design (FPGA)" },
+      { name: "Verilog Modules" },
+    ]
+  },
+  {
+    category: "Tools & Technologies",
+    icon: WrenchScrewdriverIcon,
+    items: [
+      {
+        name: "Git",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      },
+      {
+        name: "Docker",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+      },
+      {
+        name: "Linux",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+      },
     ],
   },
   {
@@ -188,7 +221,7 @@ export default function Skills() {
                 <category.icon className="h-6 w-6 text-primary mr-2" />
                 <h3 className="text-xl font-semibold">{category.category}</h3>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 flex-wrap">
                 {category.items.map((skill) => (
                   <div
                     key={skill.name}
