@@ -4,7 +4,7 @@ import { useState } from "react";
 /**
  * Notes in updating portfolio:
  * 1- remove gh-pages branch to delete last build
- * 2- before git run build, we need to copy the project folder to C:\omar directory as long path name causes error
+ * 2- before npm run deploy, we need to copy the project folder to C:\omar directory as long path name causes error
  */
 
 const getImagePath = (path: string) => {
