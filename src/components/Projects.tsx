@@ -4,8 +4,10 @@ import { useState } from "react";
 /**
  * Notes in updating portfolio:
  * 1- remove gh-pages branch to delete last build
- * 2- before npm run deploy, we need to copy the project folder to C:\omar directory as long path name causes error
- */
+ * 2- npm run build
+ * 3- copy the project folder to C:\omar directory as long path name causes error
+ * 4- npm run deploy
+*/
 
 const getImagePath = (path: string) => {
   return `/portfolio/images/projects${path}`;

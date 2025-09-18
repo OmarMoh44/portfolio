@@ -1,5 +1,9 @@
 import { motion } from "framer-motion";
 
+const getImagePath = (path: string) => {
+  return `/portfolio/images/${path}`;
+};
+
 const About = () => {
   return (
     <section id="about" className="py-20 bg-dark text-white">
@@ -57,7 +61,7 @@ const About = () => {
             >
               <div className="relative w-full h-[400px] rounded-lg overflow-hidden border-2 border-secondary">
                 <img
-                  src="/portfolio/images/profile.jpg"
+                  src={getImagePath('me.jpg')}
                   alt="Omar Mohammed"
                   className="w-full h-full object-cover"
                 />
