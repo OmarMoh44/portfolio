@@ -11,7 +11,7 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-3xl font-bold mb-4"
         >
-          <span className="text-secondary font-mono">03.</span> What's Next?
+          <span className="text-secondary font-mono">05.</span> What's Next?
         </motion.h2>
         <motion.h3
           initial={{ opacity: 0, y: 20 }}

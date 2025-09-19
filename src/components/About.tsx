@@ -21,35 +21,13 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
               <p className="text-gray-400 mb-4">
-                I am a Computer Engineering student at Cairo University,
-                passionate about building secure and efficient web applications.
-                Through intensive training programs at Cairo University's
-                Computer Engineering Department, I have honed my skills in
-                modern web technologies, collaborative development practices,
-                machine learning algorithms, and deep learning frameworks. My
-                journey in software development began with a focus on backend
-                technologies, particularly Node.js and SQL databases, and has
-                expanded to include expertise in data preprocessing and
-                full-stack development.
-              </p>
-              <p className="text-gray-400 mb-4">
-                During my studies, I've completed coursework in Object Oriented
-                Programming, Data Structures, Algorithms Analysis,
-                Database Management, Web Development, Computer Architecture,
-                Software Engineering, Operating System, Neural Network, Image
-                Processing.
-              </p>
-              <p className="text-gray-400 mb-6">
-                I completed an intensive full-stack development training at
-                Cairo University's Computer Engineering Department, where I
-                enhanced my skills in modern web technologies and collaborative
-                development practices.
-              </p>
-              <p className="text-gray-400 mb-6">
-                I completed an intensive ML/DL training at Cairo University's
-                Computer Engineering Department, where I enhanced my skills in
-                machine learning algorithms, deep learning frameworks, and data
-                preprocessing techniques.
+                <ul>
+                  <li className="mb-2">Computer Engineering student at Cairo University.</li>
+                  <li className="mb-2">Passionate about building secure and efficient web applications.</li>
+                  <li className="mb-2">Gained expertise through intensive training in modern web technologies, collaborative development, machine learning, and deep learning.</li>
+                  <li className="mb-2">Started with backend focus.</li>
+                  <li className="mb-2">Expanded skills to include data preprocessing and full-stack development.</li>
+                </ul>
               </p>
             </div>
             <motion.div

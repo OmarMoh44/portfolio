@@ -32,6 +32,12 @@ const skills: SkillCategory[] = [
       {
         name: "Object-Oriented Programming (OOP)",
       },
+      {
+        name: "Agile",
+      },
+      {
+        name: "Problem Solving"
+      }
     ],
   },
   {
@@ -167,10 +173,6 @@ const skills: SkillCategory[] = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
       },
       {
-        name: "Docker",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-      },
-      {
         name: "Linux",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
       },
@@ -182,7 +184,6 @@ const skills: SkillCategory[] = [
     items: [
       { name: "Communication" },
       { name: "Teamwork" },
-      { name: "Problem Solving" },
       { name: "Time Management" },
       { name: "Troubleshooting" },
     ],
@@ -200,7 +201,7 @@ export default function Skills() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Skills & Expertise</h2>
+          <h2 className="text-4xl font-bold mb-4"><span className="text-secondary font-mono">04.</span> Skills & Expertise</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             A comprehensive overview of my technical capabilities and
             professional competencies

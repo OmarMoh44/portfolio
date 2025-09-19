@@ -279,8 +279,10 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-3xl font-bold mb-8"
         >
-          <span className="text-secondary font-mono">02.</span> Some Things I've
-          Built
+          <span className="text-secondary font-mono">03.</span> Projects
+          <p className="text-gray-400 max-w-2xl">
+            Some Things I've Built
+          </p>
         </motion.h2>
 
         <div className="flex justify-center gap-4 mb-12">
